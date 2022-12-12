@@ -1,0 +1,124 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Bloques/archivos godot/bloque_morado.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Bloques/archivos godot/bloque_verde.tscn" type="PackedScene" id=2]
+[ext_resource path="res://pelotas/pelota.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Patinetas/scrips/Patineta.tscn" type="PackedScene" id=4]
+
+[node name="Nivel_1" type="Node2D"]
+
+[node name="Bordes" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bordes"]
+polygon = PoolVector2Array( 3, 596, -2, 0, 1024, -2, 1019, 600, 1151, -113, -170, -103 )
+
+[node name="pelota" parent="Bordes/CollisionPolygon2D" instance=ExtResource( 3 )]
+position = Vector2( 538, 560 )
+
+[node name="Patineta" parent="Bordes/CollisionPolygon2D" instance=ExtResource( 4 )]
+position = Vector2( 542, 585 )
+
+[node name="bloque_morado2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 86, 150 )
+
+[node name="bloque_morado4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 386, 146 )
+
+[node name="bloque_morado3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 266, 160 )
+
+[node name="bloque_verde6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 218, 101 )
+
+[node name="bloque_verde4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 560, 365 )
+
+[node name="bloque_verde7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 496, 269 )
+
+[node name="bloque_verde15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 220, 419 )
+
+[node name="bloque_verde10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 498, 225 )
+
+[node name="bloque_verde8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 396, 253 )
+
+[node name="bloque_verde11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 710, 257 )
+
+[node name="bloque_verde12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 298, 243 )
+
+[node name="bloque_verde13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 206, 319 )
+
+[node name="bloque_verde14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 182, 261 )
+
+[node name="bloque_verde5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 476, 403 )
+
+[node name="bloque_verde3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 478, 313 )
+
+[node name="bloque_verde9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30, 269 )
+
+[node name="bloque_morado5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 636, 184 )
+
+[node name="bloque_morado6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 684, 306 )
+
+[node name="bloque_morado7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 808, 322 )
+
+[node name="bloque_morado8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 788, 268 )
+
+[node name="bloque_morado9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 126, 320 )
+
+[node name="bloque_morado10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 744, 140 )
+
+[node name="bloque_morado11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 766, 64 )
+
+[node name="bloque_morado17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 634, 66 )
+
+[node name="bloque_morado18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 658, 128 )
+
+[node name="bloque_morado19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 864, 136 )
+
+[node name="bloque_morado20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 874, 226 )
+
+[node name="bloque_morado14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 314, 88 )
+
+[node name="bloque_morado12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 486, 62 )
+
+[node name="bloque_morado21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 878, 64 )
+
+[node name="bloque_morado22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 376, 418 )
+
+[node name="bloque_morado16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 170, 70 )
+
+[node name="bloque_morado13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 370, 318 )
+
+[node name="bloque_morado15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 170, 70 )
+
+[node name="bloque_morado" parent="." instance=ExtResource( 1 )]
+position = Vector2( 56, 72 )

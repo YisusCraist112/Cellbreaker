@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://pelotas/pelota.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Patinetas/scrips/Patineta.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Bloques/archivos godot/bloque_morado.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bloques/archivos godot/bloque_verde.tscn" type="PackedScene" id=4]
+
+[node name="Nivel_2" type="Node2D"]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+polygon = PoolVector2Array( 3, 596, -2, 0, 1024, -2, 1019, 600, 1151, -113, -170, -103 )
+
+[node name="pelota" parent="StaticBody2D2/CollisionPolygon2D" instance=ExtResource( 1 )]
+position = Vector2( 541, 567 )
+
+[node name="Patineta" parent="StaticBody2D2/CollisionPolygon2D" instance=ExtResource( 2 )]
+position = Vector2( 541, 583 )
+
+[node name="ladrillos" type="Node2D" parent="."]
+
+[node name="bloque_morado" parent="ladrillos" instance=ExtResource( 3 )]
+position = Vector2( 220, 160 )
+
+[node name="bloque_morado2" parent="ladrillos" instance=ExtResource( 3 )]
+position = Vector2( 277, 298 )
+
+[node name="bloque_morado3" parent="ladrillos" instance=ExtResource( 3 )]
+position = Vector2( 343, 236 )
+
+[node name="bloque_morado4" parent="ladrillos" instance=ExtResource( 3 )]
+position = Vector2( 212, 231 )
+
+[node name="bloque_morado5" parent="ladrillos" instance=ExtResource( 3 )]
+position = Vector2( 351, 167 )
+
+[node name="bloque_verde" parent="ladrillos" instance=ExtResource( 4 )]
+position = Vector2( 827, 203 )
+
+[node name="bloque_verde6" parent="ladrillos" instance=ExtResource( 4 )]
+position = Vector2( 518, 141 )
+
+[node name="bloque_verde2" parent="ladrillos" instance=ExtResource( 4 )]
+position = Vector2( 721, 286 )
+
+[node name="bloque_verde3" parent="ladrillos" instance=ExtResource( 4 )]
+position = Vector2( 450, 291 )
+
+[node name="bloque_verde4" parent="ladrillos" instance=ExtResource( 4 )]
+position = Vector2( 583, 244 )
+
+[node name="bloque_verde5" parent="ladrillos" instance=ExtResource( 4 )]
+position = Vector2( 662, 139 )
